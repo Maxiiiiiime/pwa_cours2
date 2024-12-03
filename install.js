@@ -13,7 +13,7 @@ insatllBtn.addEventListener('click', async (event) => {
     if(deferredPrompt) {
         deferredPrompt.prompt()
         const choiceUser = await deferredPrompt.userChoice
-        if (choiceUser == 'accepted') {
+        if (choiceUser === 'accepted') {
             insatllBtn.style.display = "none"
         }
         deferredPrompt = null
