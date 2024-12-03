@@ -13,8 +13,6 @@ const NotifMy = () => {
 
 }
 
-
-
 if(Notification.permission !== 'granted') {
     if(confirm('Accepter les notifications ?')){
         Notification.requestPermission()
